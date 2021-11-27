@@ -1,0 +1,7 @@
+Antes de intentar correr el proyecto hacer lo siguiente:
+-crear base de datos systFarma
+-configurar usuario y contraseñas mysql en archivo ".env"
+- abrir una nueva terminal y correr los siguientes codigos:
+        composer update
+        npm update
+        php artisan migrate:fresh --seed
