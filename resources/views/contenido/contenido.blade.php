@@ -105,6 +105,7 @@
         {{-- <consultaventa></consultaventa> --}}
         <h3>consultaventa</h3>
     </template>
+    <center>
     <template v-if="menu==14">
         <style type="text/css">
             #portapdf {
@@ -114,15 +115,16 @@
                 margin: 0 auto;
             }
             </style>
-            <center>
         <h1>Ayuda</h1>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum debitis ut quisquam distinctio repellendus cupiditate aperiam sint dolore, omnis cum minus accusamus mollitia? Delectus reiciendis odio impedit laborum qui iusto.
-            <div id="portapdf">
+        <center>
+            <p>----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+             <div id="portapdf">
                 <object data="{{ asset("pdf/vendedor.pdf")}}" type="application/pdf" width="500px" height="500px"></object>
             </div>
         </p>
-        <center>
+    </center>
     </template>
+</center>
 @elseif (Auth::user()->idrol == 3)
     <template v-if="menu==1">
         <categoria></categoria>
@@ -150,7 +152,7 @@
         {{-- <consultaingreso></consultaingreso> --}}
         <h3>consultaingreso</h3>
     </template>
-    <center>    
+    <center>
     <template v-if="menu==14">
         <style type="text/css">
             #portapdf {
@@ -161,12 +163,13 @@
             }
             </style>
         <h1>Ayuda</h1>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum debitis ut quisquam distinctio repellendus cupiditate aperiam sint dolore, omnis cum minus accusamus mollitia? Delectus reiciendis odio impedit laborum qui iusto.
-            
-        </p>
+        <center>
+            <p>----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+             <div id="portapdf">
         <div id="portapdf">
             <object data="{{ asset("pdf/almacenero.pdf")}}" type="application/pdf" width="500px" height="500px"></object>
         </div>
+    </center>
     </template>
 </center>
 
